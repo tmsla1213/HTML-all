@@ -1,0 +1,12 @@
+greenjob_08dj@nate.com
+ctrl + + : 확대
+ctrl + - : 축소
+손툴 : spacebar
+\\307-00
+ctrl+ R -->눈금자
+선택툴로 alt+드래그-->복사
+ctrl + ] -->한단계앞으로
+shift+ctrl + ] -->맨앞으로
+ctrl + [ -->한단계뒤로
+shift+ctrl + [ -->맨뒤로
+ctrl+Z :되돌기

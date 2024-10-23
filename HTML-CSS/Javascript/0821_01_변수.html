@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+   
+   </style>
+
+</head>
+<body>
+  
+<script>
+   var userName = "그린"; /*var 재선언 재할당 가능*/
+   var userId = "컴퓨터";
+   var userId = "computer";
+   userId = "12345"
+   var pw;
+   {var pw = "aaaaa";}/*괄호(실행문) 안에 있는 것은 안에서만 사용 가능, 지역변수*/
+   pw = 456789;//아래의 pw 값은 현재의 값 456789 이다.
+   document.write(userName + userId+pw);
+
+   let name = "그린"; /*var 재선언 불가능 재할당 가능*/
+   let name1,name2,name3;/*공간 선언 후에 데이터(이름 지정)를 넣어야 함*/
+   name1 = "green";
+   name2 = "red";
+   name3 = "blue";
+   {let name1 = "computer";}
+
+   const number = 123; /*var 재선언 재할당 불가능*/
+   const a01 = true;
+   const a02 = "null"; //null : 비어있는 데이터
+   const a03 = 100;
+   document.write(a01 + a02);
+   //삼항연산 조건? 참인값 : 거짓인값
+   document.write((a01 ? "참" : "거짓") +"<br>");
+   document.write(a03>=100 ? "100보다 큰수" : "100보다 작은수");
+   
+ 
+</script>
+</body>
+</html>

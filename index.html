@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>main-page</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage demo easing effect. Custom animations." />
+    <meta name="keywords"  content="fullpage,jquery,demo,easing,effect,jqueui,animation,easings" />
+    <meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <!-- fullPage.js CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://www.unpkg.com/fullpage.js/dist/fullpage.min.css" />
+    <link rel="stylesheet" href="https://pauloferreirajorge.com/fonts/canela.woff2">
+
+</head>
+<body>
+
+<!-- fullPage.js HTML -->
+<div id="fullpage">
+    <div class="section main">
+        <h1>PORTFOLIO</h1>
+
+    </div>
+    <div class="section profile">
+        <div class="pp">
+            <p>PROFILE</p>
+            <p>PORTFOLIO</p>
+        </div>
+        <ul class="subp">
+            <li>
+                <p><img src="images/IMG_6422.jpeg" alt="prorile"></p>
+                <div class="psub">
+                    <p><strong>배근준</strong></p>
+                    <p><strong>BAE GEUN JUN</strong></p>
+                    <p><strong>Birth date</strong> 1996. 12. 12</p>
+                    <p><strong>Mobile</strong>   010.8363.7941</p>
+                    <p><strong>E-mail</strong>   tmsla1213@naver.com</p>
+                </div>
+            </li>
+            <li>
+                <h2>보다 더 낫게 보다 더 빛나게</h2>
+                <ul>
+                    <li>
+                        <P>근(根,뿌리 근).준(晙,밝을 준)이름의 뜻과 같이 온 세상을 밝히는 어디서나 어디에나 도움이 되고 하루가 다르게 보다 더 낫게 보다 더 빛나게 발전하고 꼭 필요한 사람보다 없어서는 안될 사람이 될 것을 약속드립니다. </P>
+                    </li>
+                    <li>
+                        <h3>Career</h3>
+                        <p>그린컴퓨터아트학원 UIUX 반응형 웹디자인 & 웹퍼블리셔(프론트엔드) 양성과정</p>
+                    </li>
+                    <li>
+                        <h3>USED TOOLS</h3>
+                        <p></p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="section">
+        <div class="slide">
+            <a href="PROFILE-PORSCHE">
+                <ul>
+                    <li>
+                        <img src="images/porsche.png" alt="porsche">
+                    </li>
+                    <li class="subtxt">
+                        <h3>PORSCHE KOREA</h3>
+                        <p>역동성을 가지고 있는 스포츠카 브랜드를 통안 에너지 충전!</p>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                </ul>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="PLAYLIFE">
+                <ul>
+                    <li>
+                        <img src="images/playlifei.png" alt="porsche">
+                    </li>
+                    <li class="subtxt">
+                        <h3>PLAYLIFE</h3>
+                        <p>다양한 분야의 전문가들의 가치관을 통한 삶의 질 향상!</p>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                </ul>
+            </a>
+        </div>
+        <div class="slide">
+            <a href="SPC">
+                <ul>
+                    <li>
+                        <img src="images/spci.png" alt="porsche">
+                    </li>
+                    <li class="subtxt">
+                        <h3>SPC</h3>
+                        <p>다양한 FOOD를 통한 입의 기쁨, 삶의 질 상승!</p>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                </ul>
+            </a>
+        </div>
+    </div>
+    
+</div>
+
+<!-- fullPage.js JS -->
+<script type="text/javascript" src="https://www.unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+
+<!-- Initialize fullPage.js -->
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+
+        // Equivalent to jQuery `easeOutBack` extracted from http://matthewlein.com/ceaser/
+        
+        easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
+        loop:true,
+        // Get your license at https://alvarotrigo.com/fullPage/pricing
+        licenseKey: 'xxxxxxxxxxxxxxxxxxxxxxxxx'
+
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>*{margin: 0;padding: 0;}
+
+header{width: 1872px;height: 60px;padding: 20px;}
+ul{list-style: none;}
+a{text-decoration: none;color: #333;}
+/* input{display: none;} */
+.left{float: left;;}
+.left ul li{float: left;font-size: 14px;font-family: Arial, Helvetica, sans-serif;line-height: 60px;margin-right: 20px;}
+
+
+.right{overflow: hidden;}
+.right ul{float: right;}
+.right ul li{
+    float: left;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 20px;line-height: 40px;}
+.right ul li:nth-child(4){
+    border: 1px solid #0b57d0;
+    border-radius: 50px;width: 70px;height: 40px;line-height: 40px;text-align: center;
+    background: #0b57d0;color: #fff;
+    }
+.right ul li:nth-child(4) a{color: #fff;}
+
+
+main{text-align: center
+    ;}
+main{margin-left: 50px;}
+main ul{overflow: hidden;width: 800px;margin: 0 auto;border: 1px solid #ccc;line-height: 50px;border-radius: 50px;padding: 20px 0;}
+main ul li{width: 24px;height: 24px;float: left;margin-left: 20px;}
+
+
+
+
+
+.logo li{width: 24px;height: 24px;float: left;}
+.search{width: 584px;height: 48px;}
+.search input{width: 100%;height: 100%;}
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="left">
+        <ul>
+        <li><a href="">Google 정보</a></li>
+        <li><a href="">스토어</a></li>
+    </ul>
+        </div>
+        <div class="right">
+        <ul>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">이미지</a></li>
+            <li><a href="#"><img src="./image/menu.gif" alt="menu"></a></li>
+            <li><a href="#">로그인</a></li>
+            
+        </ul>
+        </div>
+    </header>
+    <main>
+        <p class="google"><a href=""><img src="./image/glogo.png" alt=""></a></p> 
+       <ul>
+                <li class="mirror"><img src="./image/mirror.svg" alt=""></li>
+                <li class="search"><input type="search"></li>  
+                <li class="key"><img src="./image/key_board.png" alt=""></li>
+                <li class="mic"><img src="./image/mic.svg" alt=""></li>
+                <li class="camera"><img src="./image/camera.svg" alt=""></li>  
+       </ul>
+       <!-- <ul class="txt">
+        <li>Google 검색</li>
+        <li>I'm Feeling Lucky</li>
+       </ul> -->
+    </main>
+
+    <footer></footer>
+</body>
+</html>

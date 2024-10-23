@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+        *{margin: 0;padding: 0;}
+        ul{list-style: none;}
+        a{text-decoration: none;color: #999;}
+        .wrap{width: 1700px;margin: 0 auto;text-align: center;}
+        h1{font-size: 80px;font-weight: 300;}
+        .photo{margin-top: 100px;}
+		img{width: 387px;}
+        .btn{width: 1700px;margin: 0 auto;text-align: center; color: #999;display: flex;gap: 20px;justify-content: center;margin-bottom: 30px;}
+        .photo{position: relative;}
+        .photo>li{position: absolute;top: 0;left: 0;}
+        
+        .photo >li ul{display: flex;gap: 40px;}
+        .photo >li ul li{height: 478px;width: 387px;}
+        .photo >li ul li img{width: 100%;height: 100%; object-fit: cover;}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<script>
+    $(function(){
+        $(".photo>li").css("opacity","0")
+        $(".photo>li").eq(0).css("opacity","1")
+	  $(".btn li").click(function(e){
+        e.preventDefault();
+        let i =$(this).index();
+        console.log(i)
+        $(".photo>li").css("opacity","0")
+        $(".photo>li").eq(i).css("opacity","1")
+      })	
+			});
+	</script>
+</head>
+<body>
+     <div class="wrap">
+        <h1>PRODUCTS</h1>
+        <ul class="btn">
+            <li class=".photo1"><a href="#photo1">ALL</a></li>
+            <li class=".photo2"><a href="#photo1">Dermasona</a></li>
+            <li class=".photo3"><a href="#photo1">Hot & Cool</a></li>
+            <li class=".photo4"><a href="#photo1">Haute Liang</a></li>
+            <li class=".photo5"><a href="#photo1">Gel</a></li>
+        </ul>
+        <ul class="photo">
+            <li id="photo1">
+                <ul >
+                    <li><img src="images/photo1.jpg" alt=""></li>
+                    <li><img src="images/photo2.jpg" alt=""></li>
+                    <li><img src="images/photo3.jpg" alt=""></li>
+                    <li><img src="images/photo4.jpg" alt=""></li>
+                </ul>
+            </li>
+            <li id="photo2">
+                <ul>
+                    <li><img src="images/photo1.jpg" alt=""></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li id="photo3">
+                <ul>
+                    <li><img src="images/photo2.jpg" alt=""></li>
+                    <li><img src="images/photo3.jpg" alt=""></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li id="photo4">
+                <ul>
+                    <li><img src="images/photo4.jpg" alt=""></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+            <li id="photo5">
+                <ul>
+                    <li><img src="images/photo5.jpg" alt=""></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+     </div>
+</body>
+</html>

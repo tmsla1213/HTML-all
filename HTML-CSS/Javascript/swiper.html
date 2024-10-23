@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    *{margin: 0;padding: 0;}
+    ul{list-style: none;}
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      padding: 0;
+    }
+    .esg{width: 1120px;margin: 50px auto;display: flex;justify-content: space-between;}
+    .esg .left{width: 560px;}
+    .esg ul li{display: flex;width: 300px;justify-content: space-between;font-size: 22px;}
+    .esg ul li.on{color: #04a6e1;}
+    .esg ul li p:last-child{opacity: 0;}
+    .esg ul li p.on{opacity: 1;color: #04a6e1;}
+    .swiper {
+      width: 500px;
+      height: 405px;
+    }
+
+    .swiper-slide {
+      position: relative;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .desc{position: absolute;left: 20px;bottom: 50px;color: #fff;}
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="esg">
+      <div class="left">
+        <div class="title">
+            <h1>ESG Highlights</h1>
+            <p>환경(Environment), 사회(Social), 지배구조(Governance) 각 영역의 중요 주제를 선정하고 주제 내 코웨이 ESG 활동 성과를 모든 이해관계자에게 공개합니다.</p>
+        </div>
+        <ul class="btn">
+            <li>
+               <p>01 지속가능경영 체계</p>
+               <p>+</p>
+            </li>
+            <li>
+               <p>02 이해관계자</p>
+               <p>+</p>
+            </li>
+            <li>
+               <p>03 중대성 평가</p>
+               <p>+</p>
+            </li>
+            <li>
+               <p>04 중대 이슈 관리 및 보고</p>
+               <p>+</p>
+            </li>
+        </ul>
+       </div>
+ 
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://sustainability.coway.co.kr/images/main/highlight-img-1.jpg" alt="">
+      <div class="desc">
+        <h2>01 지속가능경영체계</h2>
+        <p>코웨이는 환경, 사회, 경제적 지속 가능성을 위해 수립한 목표와 추직전략을 이행하여 지속가능경영을 선도할 것입니다.</p>
+      </div>
+ </div>
+      <div class="swiper-slide"><img src="https://sustainability.coway.co.kr/images/main/highlight-img-2.jpg" alt="">
+      <div class="desc">
+        <h2>02 이해관계자</h2>
+        <p>
+        코웨이는 중요 이슈에 대한 이해관계자의 참여와 소통을 독려함으로써
+        경영의 투명성 및 효율성을 제고하고 신뢰성 있는 관계를 구축해 나가고 있습니다.</p>
+      </div>
+ </div>
+      <div class="swiper-slide"><img src="https://sustainability.coway.co.kr/images/main/highlight-img-3.jpg" alt="">
+      <div class="desc">
+        <h2>03 중대성 평가</h2>
+        <p>
+        내부적 관점과 외부적 관점을 모두 고려하여 중대 이슈를 도출하였으며
+        이와 관련된 활동, 성과 및 목표를 보고서에 상세히 담았습니다.</p>
+      </div>
+ </div>
+      <div class="swiper-slide"><img src="https://sustainability.coway.co.kr/images/main/highlight-img-4.jpg" alt="">
+      <div class="desc">
+        <h2>04 중대 이슈 관리 및 보고<</h2>
+        <p>코웨이는 ESG경영을 고도화하고 외부 평가에 적극적으로 대응하고자
+           중대성 평가 결과를 ESG위원회에 보고하고 있습니다.</p>
+      </div>
+ </div>   
+    </div>
+  </div>
+ </div>
+ <div class="esg">
+    <div class="left">
+      <div class="title">
+          <h1>ESG Highlights</h1>
+          <p>환경(Environment), 사회(Social), 지배구조(Governance) 각 영역의 중요 주제를 선정하고 주제 내 코웨이 ESG 활동 성과를 모든 이해관계자에게 공개합니다.</p>
+      </div>
+      <ul class="btn">
+          <li>
+             <p>01 지속가능경영 체계</p>
+             <p>+</p>
+          </li>
+          <li>
+             <p>02 이해관계자</p>
+             <p>+</p>
+          </li>
+          <li>
+             <p>03 중대성 평가</p>
+             <p>+</p>
+          </li>
+          <li>
+             <p>04 중대 이슈 관리 및 보고</p>
+             <p>+</p>
+          </li>
+      </ul>
+     </div>
+
+<div class="swiper mySwiper1">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://sustainability.coway.co.kr/images/main/highlight-img-1.jpg" alt="">
+    <div class="desc">
+      <h2>01 지속가능경영체계</h2>
+      <p>코웨이는 환경, 사회, 경제적 지속 가능성을 위해 수립한 목표와 추직전략을 이행하여 지속가능경영을 선도할 것입니다.</p>
+    </div>
+  </div>
+    <div class="swiper-slide"><img src="https://sustainability.coway.co.kr/images/main/highlight-img-2.jpg" alt="">
+    <div class="desc">
+      <h2>02 이해관계자</h2>
+      <p>
+      코웨이는 중요 이슈에 대한 이해관계자의 참여와 소통을 독려함으로써
+      경영의 투명성 및 효율성을 제고하고 신뢰성 있는 관계를 구축해 나가고 있습니다.</p>
+    </div>
+  </div>
+    <div class="swiper-slide"><img src="https://sustainability.coway.co.kr/images/main/highlight-img-3.jpg" alt="">
+    <div class="desc">
+      <h2>03 중대성 평가</h2>
+      <p>
+      내부적 관점과 외부적 관점을 모두 고려하여 중대 이슈를 도출하였으며
+      이와 관련된 활동, 성과 및 목표를 보고서에 상세히 담았습니다.</p>
+    </div>
+  </div>
+
+    <div class="swiper-slide"><img src="https://sustainability.coway.co.kr/images/main/highlight-img-4.jpg" alt="">
+    <div class="desc">
+      <h2>04 중대 이슈 관리 및 보고<</h2>
+      <p>코웨이는 ESG경영을 고도화하고 외부 평가에 적극적으로 대응하고자
+         중대성 평가 결과를 ESG위원회에 보고하고 있습니다.</p>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    //let btnLi = document.querySelectorAll(".esg ul li");
+    let esg = document.querySelectorAll(".esg");
+    let btnLi = esg[0].querySelectorAll("ul li");
+    let btnLi1 = esg[1].querySelectorAll("ul li");
+    btnLi[0].classList.add("on");
+    btnLi1[0].classList.add("on");
+    btnLi[0].getElementsByTagName("p")[1].classList.add("on");
+    btnLi1[0].getElementsByTagName("p")[1].classList.add("on");
+    var swiper = new Swiper(".mySwiper", {
+        speed: 1000,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      on: {
+        slideChange:function(){
+            console.log(this.realIndex);
+            for(let i = 0;i<4;i++){
+            btnLi[i].classList.remove("on");
+            btnLi[i].getElementsByTagName("p")[1].classList.remove("on");
+            }
+            btnLi[this.realIndex].classList.add("on");
+            btnLi[this.realIndex].getElementsByTagName("p")[1].classList.add("on");
+        }
+      }
+    });
+    btnLi.forEach(function(v,k){
+        v.onmouseenter = function(){
+            swiper.autoplay.stop();
+            swiper.slideTo(k);
+        }
+        v.onmouseleave = function(){
+            swiper.autoplay.start();
+        }
+    });
+    var swiper1 = new Swiper(".mySwiper1", {
+        speed: 1000,
+        loop:true,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      on: {
+        slideChange:function(){
+            console.log(this.realIndex);
+            for(let i = 0;i<4;i++){
+            btnLi1[i].classList.remove("on");
+            btnLi1[i].getElementsByTagName("p")[1].classList.remove("on");
+            }
+            btnLi1[this.realIndex].classList.add("on");
+            btnLi1[this.realIndex].getElementsByTagName("p")[1].classList.add("on");
+        }
+      }
+    });
+    btnLi.forEach(function(v,k){
+        v.onmouseenter = function(){
+            swiper.autoplay.stop();
+            swiper.slideTo(k);
+        }
+        v.onmouseleave = function(){
+            swiper.autoplay.start();
+        }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>color</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+      p{width: 300px;border:1px solid;margin:20px;}
+      p:nth-child(1){white-space:normal;} <!--연속 공백들과 줄바꿈이 하나의 공백으로 처리->길면 줄바꿈 일어남-->
+      p:nth-child(2){white-space:nowrap} <!--연속 공백들과 줄바꿈이 하나의 공백으로 처리->길어도 줄바꿈 없이 박스 밖으로 나감-->
+      p:nth-child(3){white-space:pre;} <!--연속 공백들과 줄바꿈이 소스 그대로 표현됨-->
+      p:nth-child(4){white-space:pre-wrap;} <!--연속 공백들과 줄바꿈이 소스 그대로 표현되나, 길면 줄바꿈 일어남-->
+      p:nth-child(5){white-space:pre-line;} <!--속 공백들이 하나의 공백으로 처리, 줄바꿈은 소스 그대로 표현되나, 길면 줄바꿈 일어남-->
+      div{width: 300px;border: 1px solid;white-space: nowrap;overflow: hidden;text-overflow:ellipsis;visibility:visible;opacity: 0.2;}
+    </style>
+  </head>
+  <body>
+    <p>
+      L          orem 
+      Ipsum is simply dummy text of the printing and typesetting
+      industry.
+    </p>
+    <p>
+      L          orem 
+      Ipsum is simply dummy text of the printing and typesetting
+      industry.
+    </p>
+    <p>
+      L          orem 
+      Ipsum is simply dummy text of the printing and typesetting
+      industry.
+    </p>
+    <p>
+      L           orem
+      Ipsum is simply dummy text of the printing and typesetting
+      industry.
+    </p>
+    <p>
+      L           orem 
+      Ipsum is simply dummy text of the printing and typesetting
+      industry.
+    </p>
+    <div>  L           orem 
+      Ipsum is simply dummy text of the printing and typesetting
+      industry.</div>
+      <!--head시작-->
+      <header></header>
+      <div class="head"></div>
+      <!--head끝-->
+      <!--menu시작-->
+      <main></main>
+      <nav></nav>
+      <div class="menu"></div>
+      <!--menu끝-->
+      <footer></footer><!--문서 가장 아래에 있는 컨텐츠 약속-->
+      <div class="foot"></div>
+      <!--웹퍼블리셔에 대한 배려로 이름으로 분류를 해줌, 의미부여,시멘틱요소-->
+  </body>
+</html>

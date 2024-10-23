@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+    a{position: relative;left: -50px;top: 0px;right: 50px;}
+    /* 본인 기준으로 포지션 움직임 +=왼쪽으로 -=오른쪽으로, 중심방향으로 양의 값을 가짐, 중심기준 반대 방향이 음의 값을 가짐 */
+   h1{position: relative;left: -50px;top: 0px;}
+   div{background-color: blue;height: 300px;}  
+   ul{background-color: aqua;}
+   ul.one{position:absolute; }
+   /* 앱솔루트는 절대적인 값, 겹친다,있는 컨텐츠이지만 레이어 처럼 앞으로 뜬다, 집을 나감,바디의 영향을 안받고 혼자 돌아다닐 수 있음, 백그라운드가 들어가면 확인가능 */
+   
+   </style>
+</head>
+<body>
+<span>인라인태그</span>
+<a href="#">링크태그</a>
+<h1>제목태그</h1>
+<p>문단태그</p>
+<ul class="one">
+    <li>리스트1</li>
+    <li>리스트2</li>
+    <li>리스트3</li>
+    <li>리스트4</li>
+</ul>
+
+<div>그룹태그</div>
+<ul>
+    <li>리스트1</li>
+    <li>리스트2</li>
+    <li>리스트3</li>
+    <li>리스트4</li>
+</ul>
+</body>
+</html>

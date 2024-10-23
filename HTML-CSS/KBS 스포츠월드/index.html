@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul{list-style: none;}
+        a{text-decoration: none;color: #fff;}
+        .wrap{width: 90%;max-width: 1200px; height: 360px;margin: 0 auto;}
+        .wrap>ul{height: 100%;display: flex;flex-wrap: wrap;justify-content:center;gap: 20px;}
+        .wrap>ul li{width: 20%;background-size: contain;background-repeat: no-repeat;}
+        .wrap >ul li:first-child{background-image: url(images/SNPE1.png);}
+        .wrap >ul li:nth-child(2){background-image: url(images/SNPE2.png);}
+        .wrap >ul li:nth-child(3){background-image: url(images/SNPE3.png);}
+        .wrap >ul li:nth-child(4){background-image: url(images/SNPE4.png);}
+        .wrap >ul li p{margin: 10% 0 0 10%;font-weight: bold;}
+        .wrap >ul li p:first-child a{font-size: 36px; }
+        .wrap >ul li p:last-child{color: #fff;font-size: 16px;}
+
+        
+        @media screen and (max-width:768px) {
+            .wrap >ul{width:432px;} 
+            .wrap >ul li{width: 150px;height: 225px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <ul>
+            <li>
+                <p><a href="#">수영</a></p>
+                <p>#다이어트 #유산소 #재활</p>
+            </li>
+            <li>
+                <p><a href="#">볼링</a></p>
+                <p>#여가활동 #구기종목</p>
+            </li>
+            <li>
+                <p><a href="#">헬스</a></p>
+                <p>#다이어트 #체력증진 #근력운동</p>
+            </li>
+            <li>
+                <p><a href="#">스피닝</a></p>
+                <p>#단기다이어트 #유산소</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul{list-style: none;}
+        a{text-decoration: none;}
+        html{scroll-behavior: smooth;}
+        .platforms{width: 90%;max-width: 1420px;margin: 0 auto;display: flex;}
+        .platforms .left{width: 40%;position: sticky;top: 100px;height: 100%;}
+        .platforms .left ul li{line-height: 30px;}
+        .platforms .left h1{font-size: 54px;margin-bottom: 50px;}
+        .platforms .left ul li a{color: #565e65;font-weight: bold;font-size: 18px;}
+        .platforms .right{flex: 1;}
+        .platforms .right ul li::before{content: "";display: block;width: 100%;height: 100px;}
+        .platforms .right ul li .con{display: flex;}
+        .platforms .right ul li .con .number span{display: none;}
+        .platforms .right ul li .con .info{flex: 1;}
+        .platforms .right ul li .con .info .inner{width: 85%;margin: 0 auto;}
+        .platforms .right ul li .con .info .inner img{width: 100%;object-fit: cover;}
+
+        .foot{width: 100%;display: flex;justify-content: space-evenly;margin: 100px auto;font-weight: bold;
+        border-top: 1px solid #ccc;border-bottom:1px solid #ccc;padding: 60px 30px;box-sizing:border-box;}
+        .foot .footmenu{width: 70%;display: flex;}
+        .foot >ul>li{flex: 1 1 20%;}
+        .foot ul li li p{margin: 10px 0;}
+        .foot ul li h6{font-size: 16px;margin-bottom: 20px;}
+        .foot ul li a{color: #666;font-size: 15px;}
+        .foot >p{width: 15%;font-size: 14px;}
+
+        
+       footer{width: 90%;margin: 0 auto;margin-bottom: 80px;}
+       footer >ul{display: flex;justify-content: space-between;}
+       footer >ul .add ul li{display: flex; gap: 20px;font-size: 14px;color: #6f7880;}
+       footer >ul .icon ul{display: flex;gap:20px}
+       footer >ul .icon ul li>p{font-size: 12px;color: #6f7880;text-align: center;}
+       footer >ul .icon ul li p img{width: 28px;height: 28px;}
+
+       @media screen and (max-width:1169px) {
+        .platforms{flex-direction: column;}
+        .platforms .left{width: 100%;position: relative;top: 0;height: auto;}
+        .platforms .left ul{display: none;}
+        .platforms .right ul li::before{height: 50px;}
+        .platforms .right ul li .con{flex-direction: column;}
+        .platforms .right ul li .con .number span{display: inline-block;}
+        .platforms .right ul li .con .info .inner{width: 96%;}   
+    }
+    </style>
+</head>
+<body>
+   <div class="platforms">
+    <div class="left">
+        <h1>OLIVE Young <br>Platforms</h1>
+        <ul>
+            <li><a href="#con1">올리브영 매장</a></li>
+            <li><a href="#con2">올리브영 Online (국내)</a></li>
+            <li><a href="#con3">올리브영 글로벌</a></li>
+            <li><a href="#con4">디플롯</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <ul>
+            <li id="con1">
+                <div class="con">
+                    <p class="number">01<span>올리브영 매장 (국내)</span></p>
+                    <div class="info">
+                        <div class="inner">
+                            <p><img src="https://corp.oliveyoung.com/img/tmp/tmp_img_platform1-cf428ca64855adc4a1062251b83cf683.jpg" alt=""></p>
+                            <h1>고객과 가장 가까운 곳에서 <br>건강한 아름다움을 제안합니다.</h1>
+                            <p>우리는 1,300여개의 매장을 기반으로 고객에게 뷰티&헬스 상품을 큐레이션합니다.<br>또한 체험형 콘텐츠와 커머스의 연계를 통해 파드너사들에게 <br>매력적인 브랜딩, 마케팅 채널로 진화하고 있습니다.</p>
+                            <p><a href="#">올리브영 매장이 보고 싶다면?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="con2">
+                <div class="con">
+                    <p class="number">02<span>올리브영 Online (국내)</span></p>
+                    <div class="info">
+                        <div class="inner">
+                            <p><img src="https://corp.oliveyoung.com/img/tmp/tmp_img_platform2-777eecd5b0d28e7c17848bfe3dffe645.jpg" alt=""></p>
+                            <h1>고객이 건강한 아름다움을 찾아가는 <br>온라인 PLAYGROUNG를 제공합니다.</h1>
+                            <p>우리는 차별화된 온라인 콘텐츠와 AI기술 기반 상품 추천을 통해 월 이용자 수 408만명,<br>멤버십 회원수 1,400만명 이상의 뷰티&헬스 커뮤니티를 구현했습니다.<br>또한 업계 최초 당일 배송 서비스인 오늘드림을 실행하여 고객경험을 혁신했습니다.</p>
+                            <p><a href="#">올리브영 Online 서비스가 궁금하다면?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="con3">
+                <div class="con">
+                    <p class="number">03<span>올리브영 글로벌</span></p>
+                    <div class="info">
+                        <div class="inner">
+                            <p><img src="https://corp.oliveyoung.com/img/tmp/tmp_img_platform3-c78371c66bba75b227096ecd0f128e12.jpg" alt=""></p>
+                            <h1>전세계에 한국의<br>뷰티&헬스를 알립니다.</h1>
+                            <p>우리는 한국의 뷰티&헬스 브랜드들이 세계로 뻗어 나간느 교두보 역할을 수행합니다.<br>2019년 런칭한 글로벌몰과 연간 약 300만명 이상이 외국인 고객이 방문하는 국내 글로벌 특화매장은<br>파트너사와 함께 그로벌 시장에서 동반 성장을 할 수 있는 핵심 원동력입니다.</p>
+                            <p><a href="#">올리브영 글로벌 플랫폼을 보고싶다면?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="con4">
+                <div class="con">
+                    <p class="number">04<span>디플롯</span></p>
+                    <div class="info">
+                        <div class="inner">
+                            <p><img src="https://corp.oliveyoung.com/img/tmp/tmp_img_platform4-7c45898de0bdfb1de922247a126d8886.jpg" alt=""></p>
+                            <h1>가치지향 라이프스타일 플랫폼을 통해<br>고객에게 다양한 즐거움을 선물합니다.</h1>
+                            <p>고객이 뷰티&헬스를 넘어 라이프스타일 전반에서 자신만의 가치와<br>취향을 반영한 브랜드를 탐색할 수 있습니다.<br>이러한 고객의 경험의 확장을 통해 우리는 뷰티&헬스를 넘어선 <br>종합 라이프스타일 플랫폼으로 도약합니다.</p>
+                            <p><a href="#">D.PLOT의 감각적인 제품들이 궁금하다면?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+   </div>
+   
+<div class="foot">
+    <ul class="footmenu">
+        <li>
+            <h6>회사</h6>
+            <ul>
+                <li>
+                    <p><a href="#">미션</a></p>
+                    <p><a href="#">사업영역</a></p>
+                    <p><a href="#">현역</a></p>
+                    <p><a href="#">지속가능경영</a></p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h6>산업지원정보</h6>
+            <ul>
+                <li>
+                    <p><a href="#">정부지원사업</a></p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h6>뉴스룸</h6>
+            <ul>
+                <li>
+                    <p><a href="#">올리브영 소식</a></p>
+                    <p><a href="#">보도자료</a></p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h6>문의</h6>
+            <ul>
+                <li>
+                    <p><a href="#">제휴 제안</a></p>
+                    <p><a href="#">상품 입점 문의</a></p>
+                    <p><a href="#">가맹 및 테넌트 문의</a></p>
+                    <p><a href="#">기프트카드 문의</a></p>
+                    <p><a href="#">온라인 제보</a></p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h6>고객센터</h6>
+            <ul>
+                <li>
+                    <p><a href="#">전화 (올리브영 매장) : 1577-4887 (평일 09:00 - 18:00)</a></p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>CJ그룹 계열사 바로가기 </p>
+</div>
+<footer>
+<ul>
+    <li class="add">
+        <ul>  
+            <li>
+                <p>개인정보처리방침</p>
+                <p>법적고지</p>
+                <p>이메일 무단 수집 금지</p>
+            </li>
+            <li>
+                <p>씨제이올리브영 주식회사</p>
+                <p>서울특별시 용사누 한강대로 372, 24층(동자동,KDK타워) </p>
+                <p>ⓒ CJ OliveYoung. All Rights Reserved</p>
+            </li>
+            <li>
+                <p>대표자 : 이선정</p>
+                <p>사업자등록번호 : 809-81-01574</p>
+            </li>
+        </ul>
+    </li>
+    <li class="icon">
+        <ul>
+            <li>
+                <p><img src="https://corp.oliveyoung.com/img/footer/youtube-1e74e5ff08794d27baab78e2f66fe256.png" alt=""></p>
+                <p>youtube</p>
+            </li>
+            <li>
+                <p><img src="https://corp.oliveyoung.com/img/footer/instagram-ba92e7e9275d78bbda090d3efa44f4fb.png" alt=""></p>
+                <p>Official</p>
+            </li>
+            <li>
+                <p><img src="https://corp.oliveyoung.com/img/footer/instagram-ba92e7e9275d78bbda090d3efa44f4fb.png" alt=""></p>
+                <p>Global</p>
+            </li>
+            <li>
+                <p><img src="https://corp.oliveyoung.com/img/footer/tech-4f9e8c0d62154fa96e57fb07fb06b6d8.png" alt=""></p>
+                <p>Blog</p>
+            </li>
+            <li>
+                <p><img src="https://corp.oliveyoung.com/img/footer/linkedin-05d4e8aa75793bcfa9d30c1b146b8f2a.png" alt=""></p>
+                <p>Linkedln</p>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+</footer>
+</body>
+</html>

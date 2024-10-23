@@ -1,0 +1,55 @@
+greenjob_08dj@nate.com
+ctrl + + : 확대
+ctrl + - : 축소
+손툴 : spacebar
+\\307-00
+ctrl+ R -->눈금자
+선택툴로 alt+드래그-->복사
+ctrl + ] -->한단계앞으로
+shift+ctrl + ] -->맨앞으로
+ctrl + [ -->한단계뒤로
+shift+ctrl + [ -->맨뒤로
+ctrl+Z :되돌기
+반복복사 : ctrl + D 
+
+--------------------------------------------------------------
+
+lipsum.com
+fonts.google.com
+fontawsome(폰트어썸)
+
+https://hangeul.naver.com/font
+나눔글꼴(네이버)
+
+https://fonts.google.com/
+구글폰트
+
+fontaswome(폰트어썸)
+https://fontawesome.com/search?o=r&m=free
+
+shift + ctrl + o = creat outline
+
+반복복사 : ctrl+D
+
+웹디자인 포트폴리오
+
+http://withme1004.dothome.co.kr/
+
+UX : user express(사용자 경험)
+       experience
+
+ shtft + window +s = 캡쳐
+
+
+참고 스타일
+https://ozys.io/
+https://boss-halo-store.dogstudio.co/
+https://www.emotion.co.kr/
+http://makerfestival2020.co.kr/
+https://moonbean.coalesce.nyc/
+https://www.graphberry.com/products/download/farm-vector-icons - 라인 아이콘(일러스트)
+
+https://www.rayraylab.com/
+https://flyq.co.kr/ - 플라이크 은평
+https://www.rootfour.co.kr/ - ROOT4
+https://notefolio.net/ 노트폴리오

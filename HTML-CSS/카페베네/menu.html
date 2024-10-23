@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+header .head{width: 1190px;margin: 0 auto;height: 123px;display: flex;
+justify-content: space-between;align-items: center;}
+.head > ul{display: flex;}
+.head > ul >li{position: relative;}
+.head > ul >li>a{display: block;padding: 0 30px;color: #222;line-height: 123px;}
+.head > ul >li .sub{position: absolute;left: 0;top: 123px;width: 100%;z-index: 1;display: none;text-align: center;}
+.head > ul >li .sub li a{line-height: 40px;color: #222;}
+.head > ul >li .sub li a:hover{text-decoration: underline;font-weight: bold;}
+.head .bg{position: absolute;width: 100%;height: 240px;left: 0;top: 123px;background: rgba(255,255,255,0.8);display: none;}
+.head > ul:hover .sub{display: block;}
+.head > ul:hover ~ .bg{display: block;}
+section img{width: 100%;object-fit: cover;}
+.lang{position: relative;}
+.lang p:first-child{position: absolute;left: 100px;bottom: 40px;}
+.lang p:first-child a{margin-left: 10px;color: #222;}
+.lang p:nth-of-type(2) a{color: #fff;background: #00A5B1;border: 1px #00A5B1;border-radius: 50px;padding: 10px 45px;}
+
+
+
+
+
+div.content{width: 1190px;margin: 0 auto;display: grid;grid-template-columns: 300px 300px 590px;
+grid-template-rows: 242px 376px 100px 600px;}
+div.con1{grid-column: 1 / 3;}
+div.con2{grid-row: 1 / 3;grid-column:3;}
+div.cat{display: flex;justify-content: center;align-items: center;text-align: center;
+grid-row: 2 / 4;}
+div.cat a{display: block;}
+div.con3{grid-row: 2 / 4;grid-column:2;}
+div.con4{grid-row: 4;}
+    </style>
+</head>
+<body>
+   <header>
+    <div class="head">
+        <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+        <ul>
+            <li>
+                <a href="#">CAEFBENE</a>
+                <ul class="sub">
+                    <li><a href="#">브랜드 스토리</a></li>
+                    <li><a href="#">베네켓 스토리</a></li>
+                    <li><a href="#">카페베니 원두</a></li>
+                    <li><a href="#">카페베네 소식</a></li>
+                    <li><a href="#">메거진</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">MENU</a>
+                <ul class="sub">
+                    <li><a href="#">신메뉴</a></li>
+                    <li><a href="#">커피</a></li>
+                    <li><a href="#">음료</a></li>
+                    <li><a href="#">푸드</a></li>
+                    <li><a href="#">MD상품</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">CAEFBENE</a>
+                <ul class="sub">
+                    <li><a href="#">국내</a></li>
+                    <li><a href="#">해외</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">CAEFBENE</a>
+                <ul class="sub">
+                    <li><a href="#">등급&혜택</a></li>
+                    <li><a href="#">가입방법안내/a></li>
+                    <li><a href="#">서비스</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">CAEFBENE</a>
+                <ul class="sub">
+                    <li><a href="#">브랜드 스토리</a></li>
+                    <li><a href="#">베네켓 스토리</a></li>
+                    <li><a href="#">카페베니 원두</a></li>
+                    >
+                </ul>
+            </li>
+            <li>
+                <a href="#">CAEFBENE</a>
+                <ul class="sub">
+                    <li><a href="#">브랜드 스토리</a></li>
+                    <li><a href="#">베네켓 스토리</a></li>
+                    <li><a href="#">카페베니 원두</a></li>
+                    <li><a href="#">카페베네 소식</a></li>
+                    <li><a href="#">메거진</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="bg"></div>
+        <div class="lang">
+            <p><a href="#">KR</a><a href="#">EN</a></p>
+            <p><a href="#">가맹문의</a></p>
+        </div>
+    </div>
+   </header> 
+   <section><img src="images/visual.jpg" alt=""></section>
+
+  
+    <div class="content">
+        <div class="con1">
+           <img src="images/bene1.jpg" alt="bene">      
+        </div>
+        <div class="con2">
+           <img src="images/bene4.gif" alt="bene">      
+        </div>
+        <div class="cat">
+            <a href="">
+                <p><img src="images/bene2.gif" alt="bene"></p>
+                <p>'좋은' 사람들이 <br>'좋은' 원두로 <br>'좋은' 커피를 내리는 곳<br>바로 카페베네입니다</p>
+            </a>
+        </div>
+        <div class="con3">
+            <img src="images/bene3.jpg" alt="bene">      
+         </div> 
+         <div class="con4">
+            <img src="images/bene5.jpg" alt="bene">      
+         </div> 
+         <div class="con5">
+            <img src="images/bene6.jpg" alt="bene"> 
+            </div>     
+         </div>
+   
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+.parent{width: 300px;height: 500px;border: 1px solid 
+#000;position: relative;}
+/* .child{width: 10%;height: 100px;background-color: red;position: relative;right: -450px;top: 400px;} */
+.child{width: 20%;height: 100px;background-color: red;position: absolute;right: 0px;}
+   </style>
+</head>
+<body>
+<div class="parent">
+ <div class="child"></div>
+ <!-- 앱솔루트 사용시 부모를 떠나 기준이 없기에 바디의 포지션을 따라감 그러나 부모가 relative를 줄 경우 부모의 역할을 할 수 있음-->
+</div>
+</body>
+</html>

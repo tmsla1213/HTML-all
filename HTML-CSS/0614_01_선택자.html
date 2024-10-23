@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        /* body>p:last-of-type{color: red;} 바디의 자식요소의 p태그중 마지막(nth-of-type, first-of-type ) */
+        /* /* body>p:first-of-type{color: red;} 바디의 자식요소의 p태그중 첫번째 */
+        
+       /* /* body :not(p){
+            color: red; 
+        } 바디 안에 속해있는 p가 아닌 것(부모를 기준) 
+        /* p:only-child{color: red;} */
+        /* p:only-of-type{color:red;} */
+        /* p:nth-last-child(3){color: red;} 
+        /* 끝에서 p태그중 마지막 자식요소부터 세번째 */
+        /* p::selection{background-color: yellow;} */
+        /* p{color: red;} type 선택자 */
+        /* p:nth-child(2){color: blue} 가상선택자 */
+        /* .first{color:green} class 선택자 */
+        /* #one{color: yellow} id 선택자 */
+         p{color: red;}
+         p:nth-child(2){color: blue} 
+        .first{color:green} 
+        #one{color: yellow} 
+    </style>
+</head>
+<body>
+    <h1>제목태그</h1>
+    <p class="first" id="one">문단태그</p>
+    <h2 class="first">제목태그</h2>
+    <p>문단태그</p>
+    <p>문단태그</p>
+    <p>문단태그</p>
+    <p>문단태그</p>
+    <div>
+        <p>문단태그</p>
+    </div>
+    <div>
+        <p>문단태그</p>
+        <span>인라인태그</span>
+    </div>
+</body>
+</html>

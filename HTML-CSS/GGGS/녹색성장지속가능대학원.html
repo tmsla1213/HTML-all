@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style> 
+    #wrap{width: 1800px;height: 824px;margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(4,432px) ;
+        grid-template-rows: 400px 400px;gap: 10px;
+    }
+    #wrap div img{width: 100%;height: 100%;object-fit: cover;border-radius: 30px;}
+    #wrap .txt{grid-column: 1 / span 2;}
+    #wrap div:nth-child(4){grid-row: 2;grid-column: 1 / span 2;}
+    #wrap div:nth-child(5){grid-row: 2; grid-column: 4;}
+    #wrap div:nth-child(6){grid-column: 3;}
+    #wrap .txt h1{font-size: 64px;font-weight: bold;}
+    #wrap .txt p{font-size: 20px;color: #5d5d5d;}
+    #wrap .txt p span{font-size: 24px;font-weight: bold;color: #00a287;;}
+    #wrap div{overflow: hidden;}
+    #wrap div img{transition: 1s;border-radius: 30px;}
+    #wrap div:hover img{transform: scale(1.2);border-radius: 30px;} 
+        
+		 
+	</style>
+</head>
+<body>
+	<div id="wrap">
+        <div class="txt">
+            <h1>PROGRAM</h1>
+            <p><span>KAIST GGGS</span>에서는 녹색성장과 지속가능성 문재해결을 위해 <br>탄소중립기후기술 및 정책·금융에 대한 통섭적인 이해를 갖춘 <br>국가 핵심인제를 양성합니다.</p>
+
+        </div>
+        <div><img src="images/sec03_tab01.png" alt="tab"></div>
+        <div><img src="images/sec03_tab02.png" alt="tab"></div>
+        <div><img src="images/sec03_tab03.png" alt="tab"></div>
+        <div><img src="images/sec03_tab04.png" alt="tab"></div>
+        <div><img src="images/sec03_thumb.png" alt="tab"></div>
+        
+        
+      
+    </div>
+	
+	   
+</body>
+</html>

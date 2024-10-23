@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zindex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .parent,
+      .parent1,
+      .parent2 {
+        width: 1200px;
+        border: 1px solid;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .parent > div {
+        width: 20%;
+      }
+      .parent > div:nth-child(1) {
+        background-color: red;
+      }
+      .parent > div:nth-child(2) {
+        background-color: blue;
+      }
+      .parent > div:nth-child(3) {
+        background-color: green;
+      }
+
+      .parent1 > div {
+        width: 20%;
+        float: left;
+      }
+      .parent1 > div:nth-child(1) {
+        background-color: red;
+      }
+      .parent1 > div:nth-child(2) {
+        background-color: blue;
+      }
+      .parent1 > div:nth-child(3) {
+        background-color: green;
+      }
+
+      .parent2 > div {
+        width: 20%;
+      }
+      .parent2 > div:nth-child(1) {
+        background-color: red;
+        float: left;
+      }
+      .parent2 > div:nth-child(2) {
+        background-color: blue;
+        margin: 0 20%;
+        float: left;
+      }
+      .parent2 > div:nth-child(3) {
+        background-color: green;
+        float: left;
+      }
+
+      .parent3 {
+        margin: 0;
+        padding: 0;overflow: hidden;
+      }
+      .parent3 > .one {
+        background-color: red;
+      }
+      .parent3 > .two {
+        background-color: blue;
+      }
+      .parent3 > .three {
+        background-color: green;
+      }
+      .parent3 > .four {
+        background-color:yellow
+      }
+      .parent3 > .five {
+        background-color: gray;
+      }
+      .parent3 > .six {
+        background-color: purple;
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+    <div class="parent1">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <br />
+    <div class="parent2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <div class="parent3">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+      <div class="five">5</div>
+      <div class="six">6</div>
+    </div>
+  </body>
+</html>

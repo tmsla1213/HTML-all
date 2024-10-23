@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <!-- Demo styles -->
+  <style>
+    body{position: relative;}
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper h1{font-size: 100px;background: #FFF;margin-left: 320px;}
+
+    .swiper-slide {
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .txt{position: absolute;top: 600px;left: 350px;color: #fff;line-height: 20px;}
+    .txt h2{font-size: 45px;}
+    .txt p{font-size: 16px;}
+
+    .swiper-slide img {
+      display: block;
+      width: 1200px;
+      height: 557px;
+      object-fit: cover;
+    }
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  height: 8px;
+  font-size: 20px;
+  z-index: 999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+.swiper-button-prev{top: 874px;left: 1370px;}
+.swiper-button-next{top: 874px;right: 370px;}
+.swiper-button-prev:after,
+.swiper-button-next:after{font-size: 18px;}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -30px;
+  left: 500px;
+  width: 100%;
+  
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+     <h1>Solution</h1>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://www.bgfecomaterials.com/resources/kr/images/main/sec03_img01.jpg" alt="img01">
+        <div class="txt">
+          <h2>자동차</h2>
+          <p>탄소저감과 지속가능성을 고려하여 혁신적인 자동차 소재를 개발하는데 주력하고 있습니다.</p>
+        </div>
+    </div>
+      <div class="swiper-slide"><img src="https://www.bgfecomaterials.com/resources/kr/images/main/sec03_img02.jpg" alt="img02">
+        <div class="txt">
+            <h2>전기전자</h2>
+            <p>내충격성과 전기절연, 단열성, 화학적 기능을 강화하여 전기·전자 제품의 신뢰성과 안전성을 향상시키는 것을 목표로 합니다.</p>
+          </div>
+        </div>
+      <div class="swiper-slide"><img src="https://www.bgfecomaterials.com/resources/kr/images/main/sec03_img03.jpg" alt="img03">
+        <div class="txt">
+            <h2>산업재</h2>
+            <p>가구, 공구, 기타, 산업재 등의 외장 및 부품 등 다양한 산업재 분야에서의 고기능성 소재 라인업을 제공합니다.</p>
+          </div>
+        </div>
+     
+    </div>
+   
+  </div>
+ <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>

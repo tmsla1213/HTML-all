@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+   body>p{
+    width: 1200px;
+    height: 1300px;
+    border: 1px solid;
+}
+bodyp:first-child{
+    background-color: red;
+}
+bodyp:nth-child(2){
+    background-image: url(images/photo1.jpg);
+}
+bodyp:nth-child(3){
+    background-image: url(images/photo1.jpg);
+    background-position: 50%;background-repeat: no-repeat;
+    background-attachment: fixed; /* 픽스로 고정해서 스크롤 하더라도 그 자리에 그대로 고정 */
+}
+div p{
+    border-width: 20px;
+    padding: 100px;
+    width: 200px;
+    height: 200px;
+    border-color: rgba(0,0,0,0.3); 
+    background-image: url(images/photo1.jpg);
+    background-position: 0 0;
+    border-style: solid;
+    background-repeat: no-repeat;
+}
+div p:first-child{background-origin: border-box;}
+div p:nth-child(2){background-origin: padding-box;}
+div p:nth-child(3){background-origin: content-box;}
+    </style>
+</head>
+<body>
+   <p></p>
+   <p></p>
+   <p></p>
+   <div>
+       <p>border-box</p>
+       <p>padding-box</p>
+       <p>content-box</p>
+   </div>
+</body>
+</html>

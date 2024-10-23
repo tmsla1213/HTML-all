@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        a{text-decoration: none;color: #000;}
+        ul{list-style: none;}
+        .wrap{width: 1897px;}
+        .btn{width: 100%;max-width: 1897px; margin: 150px auto;display: flex;font-size: 18px;font-weight: 600; text-align: center;justify-content: center;position: relative;cursor: pointer;}
+        .btn::after{content: "";width: 2000px;height: 2px;background: #eee;position: absolute;bottom: 0;left: 0;}
+        .btn>li{width: 300px;height: 80px;position: relative;color: #000;}
+        .btn>li::after{content: "";width: 1px;height: 3px;background: #575759;position: absolute;bottom: 0;left: 150px;z-index: 1;transition: 0.5s;opacity: 0;text-align: center;}
+        .btn>li.on a{color: #ea002c;}
+        .btn>li.on::after{background: #ea002c;transform:scaleX(300);opacity: 1;}
+        .btn>li:hover::after{transform:scaleX(300);opacity: 1;}
+        .menu{margin: 0 auto;text-align: center;position: relative;}
+        .menu>li{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);cursor: pointer;}
+        .menu>li h1{font-size: 50px;margin-bottom: 30px;}
+        .menu>li ul{display: flex;justify-content: center;gap: 40px;text-align: center;}
+        .menu>li ul li{font-size: 20px;font-weight: 600;}
+        .menu>li ul li:first-child{color: #ea002c;}
+        .other{width: 100%;height: 1000px;background: #f9f9f9;margin-top: 300px;}
+        
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+         $(function(){
+        $(".menu>li").css("opacity","0")
+        $(".menu>li").eq(0).css("opacity","1")
+        $(".btn>li").css("color","#000")
+        $(".btn>li").eq(0).css("color","#ea002c")
+        $(".btn>li").removeClass("on")
+        $(".btn>li").eq(0).addClass("on")
+        
+        
+	  $(".btn li").click(function(e){
+        e.preventDefault();
+        let i =$(this).index();
+        console.log(i)
+        $(".menu>li").css("opacity","0")
+        $(".menu>li").eq(i).css("opacity","1") 
+        $(".btn>li").css("color","#000")
+        $(".btn>li").eq(i).css("color","#ea002c")
+        $(".btn>li").removeClass("on")
+        $(".btn>li").eq(i).addClass("on")
+       
+      })	
+			});
+    </script>
+</head>
+<body>
+  <div class="wrap">
+    <ul class="btn">
+        <li><a href="#">아동복지사업</a></li>
+        <li><a href="#">청소년복지사업</a></li>
+        <li><a href="#">노인복지사업</a></li>
+        <li><a href="#">장애인복지사업</a></li>
+        <li><a href="#">사회봉사사업</a></li>
+    </ul>
+    <ul class="menu">
+        <li id="menu1">
+            <h1>아동복지사업</h1>
+            <ul>
+                <li>지역아동센터사업</li>
+                <li>우리동네키움센터사업</li>
+                <li>어린이집사업</li>
+            </ul>
+        </li>
+        <li id="menu2">
+            <h1>청소년복지사업</h1>
+            <ul>
+                <li>청소년복지시설사업</li>
+                <li>웰컴투모로우사업</li>
+            </ul>
+        </li>
+        <li id="menu3">
+            <h1>노인복지사업</h1>
+            <ul>
+                <li>행복빨래방사업</li>
+                <li>주거환경개선사업</li>
+            </ul>
+        </li>
+        <li id="menu4">
+            <h1>장애인복지사업</h1>
+        </li>
+        <li id="menu5">
+            <h1>청소년복지사업</h1>
+        </li>
+    </ul>
+    
+  </div>  
+  <div class="other"></div>
+</body>
+</html>

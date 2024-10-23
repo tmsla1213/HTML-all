@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{margin: 0;padding: 0;}
+#wrap{width: 1422px;display: grid;
+grid-template-columns: repeat(6,215px);
+grid-template-rows: 215px 215px;gap:20px}
+#wrap div{background-size: cover;background-position: center;}
+#wrap div:first-child{background-image: url(images/review1.jpg);grid-column: 1 / span 2;}
+#wrap div:nth-child(2){background-image: url(images/review2.jpg);grid-row: 2 ;grid-column: 1;}
+#wrap div:nth-child(3){background-image: url(images/review3.jpg);grid-row: 2 ;grid-column: 2;}
+#wrap div:nth-child(4){background-image: url(images/review4.jpg);grid-row: 1 / span 2;grid-column: 3;}
+#wrap div:nth-child(5){background-image: url(images/review5.jpg);grid-column: 4;}
+#wrap div:nth-child(6){background-image: url(images/review6.jpg);grid-column: 5;}
+#wrap div:nth-child(7){background-image: url(images/review7.jpg);grid-row: 2;grid-column: 4 / span 2;}
+#wrap div:nth-child(8){background-image: url(images/review8.jpg);grid-row: 1 / span 2;grid-column: 6;}
+
+
+</style>
+</head>
+<body>
+<div id="wrap">
+<div class"review1"></div>
+<div class"review2"></div>
+<div class"review3"></div>
+<div class"review4"></div>
+<div class"review5"></div>
+<div class"review6"></div>
+<div class"review7"></div>
+<div class"review8"></div>
+
+    </div>
+</body>
+</html>

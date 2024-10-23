@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{margin: 0;padding: 0;}
+        ul{
+            width: 1200px;
+            height: 200px;
+            overflow: hidden;
+            border: 1px solid #000;
+            
+            }
+           ul li{float: left;}
+           ul li:hover{
+            transform: scale(150%);
+            transition-timing-function: linear;
+            object-fit:cover;
+            cursor:pointer;
+            transition: all 1s
+            ;object-position: 50% 50%;}
+        ul li img{
+            width: 300px;
+            height: 100%;object-fit: cover; 
+            }
+            
+    </style>
+</head>
+<body>
+ <ul class="wrap">
+     <li><img src="./images/photo1.jpg" alt="photo1"></li>
+     <li><img src="./images/photo2.jpg" alt="photo2"></li>
+     <li><img src="./images/photo3.jpg" alt="photo3"></li>
+     <li><img src="./images/photo4.jpg" alt="photo4"></li>
+ </ul>
+
+ 
+</body>
+</html>
